@@ -7,6 +7,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Django Snack Tracker</title>
+    {% compress css %}
+    <link
+      rel="stylesheet"
+      href="{% static 'src/output.css' %}"
+      type="text/css"
+    />
+
+    {% endcompress %}
   </head>
   <body>
     <header></header>
