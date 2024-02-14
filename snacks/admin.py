@@ -1,3 +1,5 @@
 from django.contrib import admin
+from .models import Snack
 
-# Register your models here.
+# register models
+admin.site.register(Snack)
