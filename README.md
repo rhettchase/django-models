@@ -4,7 +4,9 @@
 
 ### Project Description
 
+This django built web app utilizes Django Model to allow data to persist using Python objects (models). The models define the structure of stored dta, including the field types, max size, default values, etc. The model is added to `admin` and allows snacks to be added via the Admin panel.
 
+The testing suite verifies status code and the correct template is used. It also includes a `setUp` method that sets up the preconditions for the tests.
 
 ### Author: Rhett Chase
 
@@ -34,6 +36,12 @@
 - Install dependencies (see above)
 - See the page in browser by running `python manage.py runserver`
 - Open the page via the local server address specified in the terminal
+
+##### Add snack to the database
+
+- In separate terminal, create superuser with command `python manage.py createsuperuser`
+- Visit the `/admin` path and login with the superuser username and password you created
+- In the `Snacks` menu click `add` then fill in the snack information (name, purchaser, description)
 
 #### How to use your library (where applicable)
 
